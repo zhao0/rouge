@@ -916,6 +916,7 @@ window.__require = function e(t, n, i) {
                             e.nodeLipstickContainer.getComponent("LipstickContainer").reload(i.leftLipstick, e.getLevelInfo(i.currentLevel).rougeCount),
                             i.leftLipstick <= 0 ? e.nodeLipstick.active = !1 : e.nodeLipstick.runAction(cc.sequence(cc.hide(), cc.delayTime(.2), cc.show()))
                         };
+                        i.thrid = Math.random() > 0.5 ? 1 : 0;
                         3 == i.currentLevel && 2 == i.leftLipstick ? (this.startRun(0 == i.thrid), n(0 != i.thrid)) : n(!0)
                     }
                 }
